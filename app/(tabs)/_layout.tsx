@@ -1,35 +1,36 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { Tabs } from "expo-router";
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+export default function TabsLayout() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-      }}>
+    <Tabs>
       <Tabs.Screen
-        name="index"
+        name="create-order-screen/CreateOrderScreen"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
-          ),
+          headerShown: false,
+          title: "Create Orders",
+          //   tabBarIcon: ({ color, size }) => (
+          //     <Icon name="home" size={size} color={color} />
+          //   ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="history-screen/HistoryScreen"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
+          headerShown: false,
+          title: "Orders",
+          //   tabBarIcon: ({ color, size }) => (
+          //     <Icon name="list" size={size} color={color} />
+          //   ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile-screen/ProfileScreen"
+        options={{
+          headerShown: false,
+          title: "Profile",
+          //   tabBarIcon: ({ color, size }) => (
+          //     <Icon name="user" size={size} color={color} />
+          //   ),
         }}
       />
     </Tabs>

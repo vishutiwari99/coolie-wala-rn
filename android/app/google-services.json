@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933392750147",
+    "project_id": "coolie-wala-f8a68",
+    "storage_bucket": "coolie-wala-f8a68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933392750147:android:8185c59d013780a26866f6",
+        "android_client_info": {
+          "package_name": "com.cooliewala"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn-JkMYki9l4owSZeUNlwxYw0i2Tvk2ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
